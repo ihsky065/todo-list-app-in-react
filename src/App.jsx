@@ -18,6 +18,7 @@ function App() {
       type="text"
       onChange={(event) => setNewTodos(event.target.value)}
       value={newTodos} />
+      <button variant='primary' className='m-3' onClick={setTodos}>Add</button>
     </div>
     </>
   )
