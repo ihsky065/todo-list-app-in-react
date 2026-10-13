@@ -10,6 +10,17 @@ function App() {
     setTodos([...todos, newTodos]);
     setNewTodos("")
   }
+
+  return(
+    <>
+    <div className='m-3'>
+      <input
+      type="text"
+      onChange={(event) => setNewTodos(event.target.value)}
+      value={newTodos} />
+    </div>
+    </>
+  )
 }
 
 export default App
